@@ -1,0 +1,27 @@
+# PCB design files stay out of this repo for now (schematic PDF is the exception)
+*.PcbDoc
+*.SchDoc
+*.PrjPcb
+*.PrjPcbStructure
+*.OutJob
+*.SchLib
+*.PcbLib
+History/
+Project Logs for*/
+Project Outputs for*/
+__Previews/
+*.Gbr
+*.gbr
+*.drl
+
+# Firmware build output
+.pio/
+build/
+*.bin
+*.elf
+*.map
+
+# Editors and OS
+.vscode/
+.DS_Store
+Thumbs.db
