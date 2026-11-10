@@ -34,7 +34,7 @@ Why the board is the way it is. Newest decisions last within each section.
 - **Antenna feed** follows the active-antenna circuit in the MAX-M10S Integration Manual (UBX-20053088): RF inductor (not a ferrite bead) plus a series resistor, DC block, SAW filter. The manual's LNA_EN-controlled antenna power switch was left out; antenna power is always on.
 - **SAW filter: Qualcomm B39162B4327P810** (1.4 x 1.1 mm, stocked at DigiKey) instead of the Murata SAFFB1G56KB0F0A (1.1 x 0.9 mm, not carried by DigiKey and harder to hand-place).
 - **CR2032 backup** on V_BCKP rather than a diode feed from the LiPo.
-- **RESET_N left open.** Tying it to EN would discard tracking state on every ESP32 reset.
+- **RESET_N to a test point only.** Tying it to EN would discard tracking state on every ESP32 reset.
 
 ## LoRa
 

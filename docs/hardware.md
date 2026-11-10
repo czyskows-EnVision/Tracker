@@ -1,6 +1,6 @@
 # Hardware
 
-This describes the schematic in `hardware/schematic/Tracker_Schematic.pdf` (2026-10-24), plus the changes listed in [open-items.md](open-items.md).
+This describes the schematic in `hardware/schematic/Tracker_Schematic.pdf` (2026-11-10). Known schematic issues are tracked in [open-items.md](open-items.md).
 
 ## Block overview
 
@@ -56,7 +56,7 @@ The WROOM-1 module only brings out GPIO0-21 and GPIO35-48. On the N8R8, the octa
 | 48 | IMU RST | |
 | EN | Reset | 10 k pull-up, 1 µF to GND. Also drives LoRa NRST and display RES |
 
-Tied off instead of using a GPIO: display CS to GND, display RES to EN, LoRa NRST to EN, GNSS RESET_N left open (reset the GNSS over UART if needed).
+Tied off instead of using a GPIO: display CS to GND, display RES to EN, LoRa NRST to EN, GNSS RESET_N to a test point only (reset the GNSS over UART if needed).
 
 Inputs that can wake the S3 from deep sleep must be on GPIO0-21. Buttons, IMU INT, LoRa DIO1 and GPS PPS all are.
 
@@ -100,7 +100,7 @@ SAW filter: Qualcomm (RF360) B39162B4327P810, 1.4 x 1.1 mm, covers GPS, BeiDou, 
 
 L2 must be an RF-grade inductor (Murata LQG15HS27NJ02D) with self-resonance well above 1.6 GHz.
 
-The GNSS module's VCC and V_IO are on 3V3, VIO_SEL is open, SAFEBOOT goes to a test point, and V_BCKP comes from the CR2032.
+The GNSS module's VCC and V_IO are on 3V3, VIO_SEL is open, SAFEBOOT and RESET go to test points (TP2 and TP1), and V_BCKP comes from the CR2032.
 
 ## PCB
 

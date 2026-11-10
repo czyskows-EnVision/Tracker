@@ -1,5 +1,5 @@
 // Tracker (GPS Logger V3) pin assignments.
-// Matches hardware/schematic/Tracker_Schematic.pdf (2026-10-24).
+// Matches hardware/schematic/Tracker_Schematic.pdf (2026-11-10).
 // Module: ESP32-S3-WROOM-1U-N8R8. GPIO35-37 are used by the octal PSRAM; do not use them.
 #pragma once
 

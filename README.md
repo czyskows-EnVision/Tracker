@@ -8,7 +8,7 @@ The board logs position, motion and pressure to a microSD card, shows status on 
 
 | Area | State |
 |---|---|
-| Schematic | Complete as of 2026-10-24; a few changes since then are listed in [docs/open-items.md](docs/open-items.md) |
+| Schematic | Updated 2026-11-10; one known fix outstanding, listed in [docs/open-items.md](docs/open-items.md) |
 | PCB layout | In progress (4-layer, single-sided SMD). Layout files are kept out of this repo for now |
 | Prototypes | 5 boards, hand-assembled with a stencil and solder paste |
 | Firmware | Not started in this repo; pin definitions are in [firmware/include/pins.h](firmware/include/pins.h) |
