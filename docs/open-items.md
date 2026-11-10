@@ -8,7 +8,7 @@ The PDF in `hardware/schematic/` is the 2026-11-10 version.
 - [x] USBLC6 VBUS pin on the connector side of the input diode (net VBUS_IN).
 - [x] GNSS antenna connector is the MyAntenna A-SMA-KE-16.5A edge-mount SMA (LCSC C22467617). Confirm its clamp gap fits a 1.6 mm board.
 - [x] GNSS RESET goes to test point TP1 instead of being left bare.
-- [ ] **Charger EN1 has no DC path to ground.** C15 (10 µF) is wired between VSYS and EN1, so EN1 floats and C15 isn't decoupling anything. Tie EN1 straight to GND and connect C15 pin 2 to GND. EN1 low with EN2 high is the ILIM-programmed input mode; EN1 and EN2 both high puts the charger in USB suspend, cutting off USB power.
+- [x] Charger EN1 tied to GND, and C15 (10 µF on VSYS) now returns to GND. It had been wired between VSYS and EN1, leaving EN1 floating.
 
 ## Before ordering
 
