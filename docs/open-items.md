@@ -24,7 +24,7 @@ The PDF in `hardware/schematic/` is the 2026-11-10 version.
 - [ ] Confirm both boot straps read correctly with the display fitted (board boots with the display module installed).
 - [ ] GNSS C/N0 check with LoRa and WiFi transmitting (see [antennas.md](antennas.md)).
 - [ ] Confirm the Wio-SX1262 TCXO voltage before configuring RadioLib.
-- [ ] Write a hardware test firmware that exercises every peripheral against `firmware/include/pins.h`.
+- [x] Hardware test firmware: `firmware/hwtest` (not yet compiled or run on hardware).
 
 ## Possible later changes
 

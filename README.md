@@ -11,7 +11,7 @@ The board logs position, motion and pressure to a microSD card, shows status on 
 | Schematic | Updated 2026-11-10; remaining checks are in [docs/open-items.md](docs/open-items.md) |
 | PCB layout | In progress (4-layer, single-sided SMD). Layout files are kept out of this repo for now |
 | Prototypes | 5 boards, hand-assembled with a stencil and solder paste |
-| Firmware | Not started in this repo; pin definitions are in [firmware/include/pins.h](firmware/include/pins.h) |
+| Firmware | Bring-up test in [firmware/hwtest](firmware/hwtest); pin definitions in [firmware/include/pins.h](firmware/include/pins.h) |
 
 ## Hardware at a glance
 
@@ -33,13 +33,15 @@ The board logs position, motion and pressure to a microSD card, shows status on 
 docs/
   hardware.md        Block diagram in words, pin map, power, buses, strapping pins
   antennas.md        Three-radio antenna plan and coexistence rules
+  bring-up.md        First power-on procedure and failure hints
   firmware-notes.md  Library choices and configuration for each peripheral
   decisions.md       Why the design is the way it is
   open-items.md      Pending changes and things to check
 firmware/
   include/pins.h     GPIO assignments matching the schematic
+  hwtest/            Bring-up test firmware (PlatformIO, Arduino)
 hardware/
   schematic/Tracker_Schematic.pdf
 ```
 
-Firmware projects (bring-up tests, the logger itself) will go under `firmware/`.
+Further firmware projects, including the logger itself, will go under `firmware/` alongside `hwtest`.
